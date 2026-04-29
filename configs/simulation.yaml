@@ -1,0 +1,55 @@
+# Cahn-Hilliard simulation parameters
+# Defaults match FH_CH_v40_3.m
+
+# grid
+Nx: 128
+Ny: 128
+L: 50.0
+
+# degrees of polymerization
+N_A: 1
+N_B: 1
+N_S: 1
+
+# Flory-Huggins interaction parameters
+chi_AB: 7.0
+chi_AS: 3.5      # starting chi_AS (= chi_PS)
+chi_BS: 3.5      # starting chi_BS
+chi_AS_final: 3.5   # final chi_AS (for ramping; set > chi_AS to ramp up)
+t0_ramp_number: 1.0e6   # number of t0's over which chi is ramped
+
+# lambda = Rg (following Mao, not Kessler)
+lambda_AS: 1.0
+lambda_BS: 1.0
+lambda_AB: 1.0
+
+# diffusion coefficients
+D_A: 100.0
+D_B: 100.0
+D_S: 100.0
+mobility_averaging: geometric   # geometric | arithmetic | harmonic
+
+# initial conditions
+phi_A00: 0.1    # background composition for A
+phi_B00: 0.1    # background composition for B
+dphi_P: 0.01    # noise amplitude about initial background
+seed: 42
+
+# Gaussian nucleus initialization (active in FH_CH_v40_3.m)
+use_nucleus: true
+nucl_phi: 0.33     # peak composition of nucleus
+nucl_R: 4.0        # nucleus radius (should be ~2x lambda)
+offset: 10.0       # offset between A and B nucleus centers
+
+# Langevin noise (0 = disabled, as in paper)
+langevin_noise_ampl: 0.0
+
+# time stepping
+dt0_factor: 0.1    # dt0 = t0 * dt0_factor
+t_end: null        # run indefinitely if null; otherwise stop at t_end * t0
+
+# output intervals (in multiples of t0)
+plot_interval_t0: 1000.0     # t0 units between figure saves
+save_interval_t0: 1000.0     # t0 units between .npz checkpoint saves
+
+output_dir: outputs/simulation

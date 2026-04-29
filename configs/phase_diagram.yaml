@@ -1,0 +1,28 @@
+# Phase diagram calculation parameters
+# Defaults match FH_ph_diag_v27.m
+
+# degrees of polymerization
+N_A: 150
+N_B: 15
+N_S: 1
+
+# interaction parameters (chi_PS = 0 at t=0 in the paper)
+chi_AS: 0.0
+chi_BS: 0.0
+chi_AB: 0.15    # PS-PBrS: chi_AB ~ 0.15
+
+# initial composition (for marker on diagram)
+phi_A0: 0.015
+phi_B0: 0.015
+
+# grid resolution
+npts: 100        # coarse grid (full triangle)
+npts_fine: 150   # fine grid (zoomed-in region)
+epsilon: 1.0e-10   # avoid log(0) at pure component vertices
+
+# optional parameter scans
+run_N_scan: false
+N_scan: [15, 25, 50]
+chi_AB_scan: [0.05, 0.1, 0.15, 0.2, 0.3]
+
+output_dir: outputs/phase_diagram

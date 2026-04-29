@@ -1,0 +1,14 @@
+# Analysis / figure preparation parameters
+# Port of FH_figure_prep_v6.m
+
+simulation_dir: outputs/simulation
+phase_diagram_dir: outputs/phase_diagram
+output_dir: outputs/figures
+
+# morphology triangle classification thresholds (from FH_figure_prep_v6.m)
+cutoff1: 0.04    # if distance between all vertices < cutoff1 -> 1-phase
+cutoff2: 0.04    # intermediate threshold
+cutoff3: 0.1     # if any edge > cutoff3 -> 3-phase
+
+# vitrification composition threshold: phi_A + phi_B > phi_vit = kinetically arrested
+phi_vit: 0.66    # y = 0.289 corresponds to phi_A + phi_B = 0.66
