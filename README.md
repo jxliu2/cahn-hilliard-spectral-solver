@@ -5,6 +5,9 @@ Spectral IMEX Cahn-Hilliard solver for ternary polymer-solvent systems with Flor
 > Liu, J. et al. "Evolution of Polymer Colloid Structure During Precipitation and Phase Separation." *JACS Au* 2021.
 > https://pubs.acs.org/doi/full/10.1021/jacsau.1c00110
 
+> Numerical details can be found in the Supporting Information: 
+> https://pubs.acs.org/doi/suppl/10.1021/jacsau.1c00110/suppl_file/au1c00110_si_001.pdf
+
 ## Overview
 
 The simulations model phase separation in a ternary A/B/solvent mixture during solvent-exchange-induced precipitation. The competition between polymer-polymer phase separation and vitrification determines the final colloid morphology (homogeneous, bicontinuous, Janus, or patchy).
