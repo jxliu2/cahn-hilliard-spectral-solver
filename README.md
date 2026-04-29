@@ -2,8 +2,7 @@
 
 Spectral IMEX Cahn-Hilliard solver for ternary polymer-solvent systems with Flory-Huggins thermodynamics. Code supporting:
 
-> Liu, J. et al. "Evolution of Polymer Colloid Structure During Precipitation and Phase Separation." *JACS Au* 2021.
-> https://pubs.acs.org/doi/full/10.1021/jacsau.1c00110
+> Liu, J. X.; Bizmark, N.; Scott, D. M.; Register, R. A.; Haataja, M. P.; Datta, S. S.; Arnold, C. B.; Priestley, R. D. "Evolution of Polymer Colloid Structure During Precipitation and Phase Separation." *JACS Au* **2021**, *1* (7), 936–944. https://doi.org/10.1021/jacsau.1c00110
 
 > Numerical details can be found in the Supporting Information: 
 > https://pubs.acs.org/doi/suppl/10.1021/jacsau.1c00110/suppl_file/au1c00110_si_001.pdf
