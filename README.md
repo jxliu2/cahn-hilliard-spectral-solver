@@ -9,7 +9,7 @@ Spectral IMEX Cahn-Hilliard solver for ternary polymer-solvent systems with Flor
 
 ## Overview
 
-The simulations model phase separation in a ternary A/B/solvent mixture during solvent-exchange-induced precipitation. The competition between polymer-polymer phase separation and vitrification determines the final colloid morphology (homogeneous, bicontinuous, Janus, or patchy).
+The simulations model phase separation in a ternary A/B/solvent mixture during solvent-exchange-induced precipitation. The competition between polymer-polymer phase separation and vitrification determines the final colloid morphology (homogeneous, bicontinuous, Janus, or patchy). This codebase is a port of the original simulation code. 
 
 Three pipelines are available:
 
